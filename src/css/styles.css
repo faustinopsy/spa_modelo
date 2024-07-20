@@ -258,3 +258,19 @@ color: #79e3b6;
 #font-size-control button:hover {
     background-color: #e0a800;
 }
+@media (min-width: 680px){
+    header{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: nowrap;
+    }
+    nav{
+        display: flex;
+        justify-content: center;
+    }
+    ul{
+        display: flex;
+        list-style: none;
+    }
+}

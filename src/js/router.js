@@ -35,12 +35,10 @@ function renderizaNovidades() {
 }
 
 function renderizaQuestoes(materiaId) {
-    const header = document.querySelector('header');
     main.innerHTML = '';
     location.hash = `#${materiaId}`;
     const materia = materias.find(m => m.id == materiaId);
     if (materia) {
-        header.innerHTML = `<h4>Provas de Concurso</h4><p>${materia.nome}</p>`;
         const questoesComponent = criaquestoes(materiaId, materia.nome);
         main.appendChild(questoesComponent);
     }
